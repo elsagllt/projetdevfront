@@ -2,7 +2,6 @@
   "name": "projet",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "serve": "parcel src/index.html",
     "build": "parcel build src/index.html"
