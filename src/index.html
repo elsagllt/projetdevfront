@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.scss">
+  <script defer type="text/javascript" src="app.js"></script>
   <title>Gourdea - LA gourde isotherme</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
       <a href="#" class="menu__item">Contact</a>
     </nav>
 
-    <button class="hamburger">
+    <button class="header__hamburger">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list menu__icon" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
       </svg>
@@ -33,50 +34,58 @@
     </svg>
   </header>
 
-  <section class="timer">
-    <p>Fin de la collection dans 10jours 10 heures et 10 minutes</p>
-  </section>
-  
+  <div class="timer">
+  </div>
+
   <h2>Gourde isotherme et flashy</h2>
   <p>Découvrez notre nouvelle collection estivale de produits zéro-déchet et craquez pour notre bouteille isotherme et flashy. Elle remplace les bouteilles en plastique et fait encore mieux : elle conserve vos boissons préférées au chaud (pendant 12h) comme au froid (pendant 24h).</p>
   <article>
-    <img src="assets/gourde_rose.webp" alt="image gourde rose">
+    <img src="assets/gourde_rose.webp" alt="image gourde rose" loading="lazy">
     <h3>Nom de la gourde</h3>
     <p>19,99€</p>
     <p>Couleur gourmande, touché agréable, isotherme et en inox, cette bouteille vous permettra d’emporter partout avec vous votre boisson préférée !</p>
     <button>Ajouter au panier</button>
   </article>
-  <article>
+
+  <article class="description">
     <h4>Caractéristiques</h4>
-    <ul>
-      <li>Hauteur: 26cm</li>
-      <li>Diamètre: 7cm</li>
-      <li>Diamètre d'ouverture: 3,2cm</li>
-      <li>Poids: 0.3kg</li>
-      <li>Capacité: 500ml</li>
-      <li>Matériaux: acier inoxydable et joint silicone</li>
-    </ul>
-    <ul>
-      <li>Maintien 12heures au chaud</li>
-      <li>Maintien 24heures au froid</li>
-      <li>Sans BPA</li>
-      <li>Etanchéité garantie</li>
-      <li>Matériaux sains</li>
-    </ul>
+    <div class="description__caracteristics">
+      <ul class="description__list">
+        <li class="list__title">Dimensions et poids</li>
+        <li>Hauteur: 26cm</li>
+        <li>Diamètre: 7cm</li>
+        <li>Diamètre d'ouverture: 3,2cm</li>
+        <li>Poids: 0.3kg</li>
+        <li>Capacité: 500ml</li>
+        <li class="list__title">Matériaux</li>
+        <li>Acier inoxydable</li>
+        <li>Joint silicone</li>
+      </ul>
+      <ul class="description__list">
+        <li>Maintien 12heures au chaud</li>
+        <li>Maintien 24heures au froid</li>
+        <li>Sans BPA</li>
+        <li>Etanchéité garantie</li>
+        <li>Matériaux sains</li>
+      </ul>
+  </div>
   </article>
-  <article>
+  <article class="description"> 
     <h4>Entretien et utilisation</h4>
-    <ul>
-      <li>Ne pas mettre au lave-vaisselle, au four à micro-ondes, au four traditionnel ou au congélateur</li>
-      <li>Nettoyer avant chaque utilisation.</li>
-      <li>Nettoyer avec de l’eau chaude savonneuse et/ou du bicarbonate de soude</li>
-      <li>Faire sécher tête en bas</li>
-      <li>Entreposer en laissant le contenant ouvert</li>
-      <li>Attention, les liquides ou aliments chauds peuvent brûler : utiliser le produit avec précaution</li>
-      <li>Ne pas dépasser la capacité de remplissage. Remplir jusqu’au-dessous du pas de vis</li>
-      <li>Pour éviter les éclaboussures et les fuites, fermer correctement et complètement le bouchon/couvercle afin d’assurer l’étanchéité du produit. Le transport en position verticale est recommandé</li>
-    </ul>
+    <div class="description__caracteristics">
+      <ul class="description__list">
+        <li>Ne pas mettre au lave-vaisselle, au four à micro-ondes, au four traditionnel ou au congélateur</li>
+        <li>Nettoyer avant chaque utilisation.</li>
+        <li>Nettoyer avec de l’eau chaude savonneuse et/ou du bicarbonate de soude</li>
+        <li>Faire sécher tête en bas</li>
+        <li>Entreposer en laissant le contenant ouvert</li>
+        <li>Attention, les liquides ou aliments chauds peuvent brûler : utiliser le produit avec précaution</li>
+        <li>Ne pas dépasser la capacité de remplissage. Remplir jusqu’au-dessous du pas de vis</li>
+        <li>Pour éviter les éclaboussures et les fuites, fermer correctement et complètement le bouchon/couvercle afin d’assurer l’étanchéité du produit. Le transport en position verticale est recommandé</li>
+      </ul>
+  </div>
   </article>
+
   <button>Ajouter au panier</button>
   <section>
     <h3>Avis <span>4,5</span></h3>
@@ -88,26 +97,6 @@
       <p>****</p>
       <p>Entièrement séduite par ce produit qui me suit partout ! Idéale pour garder mes infusions à bonne température lors de mes randonnées hivernales et mes boissons toujours fraîches l’été. Je recommande !</p>
     </div>
-  </section>
-  <section>
-    <figure>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 320 256"><path d="M368 0C394.5 0 416 21.49 416 48V96H466.7C483.7 96 499.1 102.7 512 114.7L589.3 192C601.3 204 608 220.3 608 237.3V352C625.7 352 640 366.3 640 384C640 401.7 625.7 416 608 416H576C576 469 533 512 480 512C426.1 512 384 469 384 416H256C256 469 213 512 160 512C106.1 512 64 469 64 416H48C21.49 416 0 394.5 0 368V48C0 21.49 21.49 0 48 0H368zM416 160V256H544V237.3L466.7 160H416zM160 368C133.5 368 112 389.5 112 416C112 442.5 133.5 464 160 464C186.5 464 208 442.5 208 416C208 389.5 186.5 368 160 368zM480 464C506.5 464 528 442.5 528 416C528 389.5 506.5 368 480 368C453.5 368 432 389.5 432 416C432 442.5 453.5 464 480 464z"/></svg>
-      <figcaption>
-        Livraison gratuite en France dès 20€ d'achat
-      </figcaption>
-    </figure>
-    <figure>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM164.1 325.5C158.3 318.8 148.2 318.1 141.5 323.9C134.8 329.7 134.1 339.8 139.9 346.5C162.1 372.1 200.9 400 255.1 400C311.1 400 349.8 372.1 372.1 346.5C377.9 339.8 377.2 329.7 370.5 323.9C363.8 318.1 353.7 318.8 347.9 325.5C329.9 346.2 299.4 368 255.1 368C212.6 368 182 346.2 164.1 325.5H164.1zM176.4 176C158.7 176 144.4 190.3 144.4 208C144.4 225.7 158.7 240 176.4 240C194 240 208.4 225.7 208.4 208C208.4 190.3 194 176 176.4 176zM300.8 233.6C318.4 210.1 353.6 210.1 371.2 233.6C376.5 240.7 386.5 242.1 393.6 236.8C400.7 231.5 402.1 221.5 396.8 214.4C366.4 173.9 305.6 173.9 275.2 214.4C269.9 221.5 271.3 231.5 278.4 236.8C285.5 242.1 295.5 240.7 300.8 233.6z"/></svg>
-      <figcaption>
-        Satisfait ou remboursé sous 30 jours
-      </figcaption>
-    </figure>
-    <figure>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 288 256"><path d="M48.66 79.13C128.4 100.9 208.2 80.59 288 60.25C375 38.08 462 15.9 549 48.38C565.9 54.69 576 71.62 576 89.66V399.5C576 423.4 550.4 439.2 527.3 432.9C447.6 411.1 367.8 431.4 288 451.7C200.1 473.9 113.1 496.1 26.97 463.6C10.06 457.3 0 440.4 0 422.3V112.5C0 88.59 25.61 72.83 48.66 79.13L48.66 79.13zM287.1 352C332.2 352 368 309 368 255.1C368 202.1 332.2 159.1 287.1 159.1C243.8 159.1 207.1 202.1 207.1 255.1C207.1 309 243.8 352 287.1 352zM63.1 416H127.1C127.1 380.7 99.35 352 63.1 352V416zM63.1 143.1V207.1C99.35 207.1 127.1 179.3 127.1 143.1H63.1zM512 303.1C476.7 303.1 448 332.7 448 368H512V303.1zM448 95.1C448 131.3 476.7 159.1 512 159.1V95.1H448z"/></svg>
-      <figcaption>
-        Paiement sécurisé
-      </figcaption>
-    </figure>
   </section>
   <footer>
 

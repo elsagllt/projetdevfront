@@ -1,13 +1,14 @@
-function $(selector, el) { 
-  if (!el) {el = document;} 
-  return el.querySelector(selector); 
-} 
-function $$(selector, el) { 
-  if (!el) {el = document;} 
-  return Array.prototype.slice.call(el.querySelectorAll(selector)); 
-}
-
 window.addEventListener('DOMContentLoaded', function(){
+
+  function $(selector, el) { 
+    if (!el) {el = document;} 
+    return el.querySelector(selector); 
+  } 
+  function $$(selector, el) { 
+    if (!el) {el = document;} 
+    return Array.prototype.slice.call(el.querySelectorAll(selector)); 
+  }
+
 /*Réglages menu */
 const menu = $(".header__menu");
 const menuItems = $$(".menu__item");
@@ -24,7 +25,7 @@ function toggleMenu() {
   }
 }
 
-$(".hamburger").addEventListener("click", toggleMenu);
+$(".header__hamburger").addEventListener("click", toggleMenu);
 
 
 menuItems.forEach( 
@@ -32,17 +33,15 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
 /* Compte à rebours */
-function compte_a_rebours()
+let compte_a_rebours = $(".timer");
 
-{
-
-    let compte_a_rebours = $(".timer");
-
+function compte_a_rebours(){
     let date_actuelle = new Date();
-    let date_fin = new Date("April 10 00:00:00 2022");
+    let date_fin = new Date("Fri Mar 26 2022 09:07:19");
 
-    let total_secondes = (date_evenement - date_actuelle) / 1000;
+    let total_secondes = (date_fin - date_actuelle) / 1000;
 
     let prefixe = "Fin de cette collection dans ";
 
@@ -100,21 +99,13 @@ function compte_a_rebours()
       et = "";
     }
 
-    compte_a_rebours.innerHTML = prefixe + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
+    compte_a_rebours.innerHTML ='<p>'+ prefixe + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde +'</p>';
+  }
+  else{
+    compte_a_rebours.innerHTML = '<p>Fin de la vente.</p>';
   }
 
-    else
-
-    {
-
-        compte_a_rebours.innerHTML = 'Fin de la vente.';
-
-    }
-
-
-    let actualisation = setTimeout("compte_a_rebours();", 1000);
-
+  let actualisation = setTimeout("compte_a_rebours();", 1000);
 }
-
 compte_a_rebours();
 });
