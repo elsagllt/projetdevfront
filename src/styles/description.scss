@@ -1,15 +1,28 @@
 .description {
   margin: 1rem;
   padding: 0.5rem;
-  border: solid 1.5px #5f6670;
+  border: solid 1.5px var(--color2);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  height: 2.5rem;
+  overflow: hidden;
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
+}
+
+.description__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.description--open {
+  height: max-content;
 }
 
 .description__caracteristics {
@@ -19,7 +32,6 @@
 
 .description__list {
   line-height: 1.2rem;
-  list-style-type: disc;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

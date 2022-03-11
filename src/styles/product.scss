@@ -1,0 +1,37 @@
+.product__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.product__text {
+  text-align: center;
+}
+
+.product__informations {
+  margin: 1rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.product__name {
+  text-align: center;
+  font-weight: bold;
+}
+.product__details {
+  text-align: center;
+}
+
+.product__sale {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  p {
+    font-weight: bold;
+  }
+}

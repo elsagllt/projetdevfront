@@ -13,6 +13,7 @@
   <header class="header">
     <div></div>
     <nav class="header__menu">
+      <p>Menu</p>
       <a href="#" class="menu__item">A propos</a>
       <a href="#" class="menu__item">Nos accessoires</a>
       <a href="#" class="menu__item">Contact</a>
@@ -28,27 +29,39 @@
       </svg>
     </button>
 
-    <h1 class="header__title">Gourdea</h1>
+    <h2 class="header__title">Gourdea</h2>
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-basket2-fill header__basket" viewBox="0 0 20 20">
       <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z"/>
     </svg>
   </header>
 
-  <div class="timer">
+  <div id="timer">
   </div>
 
-  <h2>Gourde isotherme et flashy</h2>
-  <p>Découvrez notre nouvelle collection estivale de produits zéro-déchet et craquez pour notre bouteille isotherme et flashy. Elle remplace les bouteilles en plastique et fait encore mieux : elle conserve vos boissons préférées au chaud (pendant 12h) comme au froid (pendant 24h).</p>
-  <article>
-    <img src="assets/gourde_rose.webp" alt="image gourde rose" loading="lazy">
-    <h3>Nom de la gourde</h3>
-    <p>19,99€</p>
-    <p>Couleur gourmande, touché agréable, isotherme et en inox, cette bouteille vous permettra d’emporter partout avec vous votre boisson préférée !</p>
-    <button>Ajouter au panier</button>
-  </article>
+  <section class="product">
+    <h1 class="product__title">Gourde isotherme flashy</h1>
+    <p class="product__text">Découvrez notre nouvelle collection estivale de produits zéro-déchet et craquez pour notre bouteille isotherme et flashy. Elle remplace les bouteilles en plastique et fait encore mieux : elle conserve vos boissons préférées au chaud (pendant 12h) comme au froid (pendant 24h).</p>
+    <article class="product__informations">
+      <img src="assets/gourde_rose.webp" alt="image gourde rose" loading="lazy">
+      <div>
+        <h3 class="product__name">Nom de la gourde</h3>
+        <p class="product__details">Couleur gourmande, touché agréable, isotherme et en inox, cette bouteille vous permettra d’emporter partout avec vous votre boisson préférée !</p>
+        <div class="product__sale">
+          <p class="product__price">19,99€</p>
+          <button>Ajouter au panier</button>
+        </div>
+      </div>
+    </article>
+  </section>
 
   <article class="description">
-    <h4>Caractéristiques</h4>
+    <div class="description__title">
+      <h4>Caractéristiques</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus more" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+      </svg>
+    </div>
+
     <div class="description__caracteristics">
       <ul class="description__list">
         <li class="list__title">Dimensions et poids</li>
@@ -71,7 +84,12 @@
   </div>
   </article>
   <article class="description"> 
-    <h4>Entretien et utilisation</h4>
+    <div class="description__title">
+      <h4>Entretien et utilisation</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus more" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+      </svg>
+    </div>
     <div class="description__caracteristics">
       <ul class="description__list">
         <li>Ne pas mettre au lave-vaisselle, au four à micro-ondes, au four traditionnel ou au congélateur</li>
@@ -81,21 +99,23 @@
         <li>Entreposer en laissant le contenant ouvert</li>
         <li>Attention, les liquides ou aliments chauds peuvent brûler : utiliser le produit avec précaution</li>
         <li>Ne pas dépasser la capacité de remplissage. Remplir jusqu’au-dessous du pas de vis</li>
-        <li>Pour éviter les éclaboussures et les fuites, fermer correctement et complètement le bouchon/couvercle afin d’assurer l’étanchéité du produit. Le transport en position verticale est recommandé</li>
+        <li>Pour éviter les éclaboussures et les fuites, fermer correctement et complètement le bouchon/couvercle afin d’assurer l’étanchéité du produit. </li>
+        <li>Le transport en position verticale est recommandé</li>
       </ul>
   </div>
   </article>
 
   <button>Ajouter au panier</button>
-  <section>
+
+  <section class="avis">
     <h3>Avis <span>4,5</span></h3>
-    <div>
-      <p>*****</p>
-      <p>Produit de très bonne qualité. Large choix de coloris et de motifs disponibles. Je l’utilise partout, tout le temps, je recommande fortement ce produit ! </p>
+    <div class="avis__avis">
+      <p class="avis__star">*****</p>
+      <p class="avis__comment">Produit de très bonne qualité. Large choix de coloris et de motifs disponibles. Je l’utilise partout, tout le temps, je recommande fortement ce produit ! </p>
     </div>
-    <div>
-      <p>****</p>
-      <p>Entièrement séduite par ce produit qui me suit partout ! Idéale pour garder mes infusions à bonne température lors de mes randonnées hivernales et mes boissons toujours fraîches l’été. Je recommande !</p>
+    <div class="avis__avis">
+      <p class="avis__star">****</p>
+      <p class="avis__comment">Entièrement séduite par ce produit qui me suit partout ! Idéale pour garder mes infusions à bonne température lors de mes randonnées hivernales et mes boissons toujours fraîches l’été. Je recommande !</p>
     </div>
   </section>
   <footer>
