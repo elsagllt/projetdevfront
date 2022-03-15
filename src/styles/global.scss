@@ -1,0 +1,29 @@
+@mixin mediumScreen {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin bigScreen {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin giantScreen {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.2;
+}

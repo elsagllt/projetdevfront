@@ -26,18 +26,27 @@
 }
 
 .description__caracteristics {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  @include mediumScreen() {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
 }
 
 .description__list {
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 1rem;
 }
 
 .list__title {
   font-weight: bold;
   list-style-type: none;
+}
+
+.description__more {
+  cursor: pointer;
 }

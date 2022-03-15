@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', function(){
           let et = "et";
           let mot_jour = "jours,";
           let mot_heure = "heures,";
-          let mot_minute = "minutes,";
+          let mot_minute = "minutes";
           let mot_seconde = "secondes";
 
           if (jours == 0){
@@ -104,7 +104,7 @@ window.addEventListener('DOMContentLoaded', function(){
   compte_a_rebours();
 
 /* Affichage caractéristiques */
-  $$(".more").forEach( plus =>{
+  $$(".description__more").forEach( plus =>{
     plus.addEventListener("click", function(){
     plus.closest(".description").classList.toggle('description--open');
     });

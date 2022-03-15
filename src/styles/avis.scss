@@ -1,0 +1,32 @@
+.avis {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: var(--color2);
+    font-size: 1.5rem;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+}
+
+.avis__avis {
+  margin: 1rem 0;
+}
+
+.avis__stars {
+  text-align: center;
+
+  svg {
+    margin: 0.1rem;
+    color: aqua;
+  }
+}
+
+.avis__comment {
+  text-align: justify;
+}
