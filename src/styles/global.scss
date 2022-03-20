@@ -30,6 +30,9 @@ p {
 
 body {
   @include bigScreen {
+    padding: 0 5vw;
+  }
+  @include giantScreen {
     padding: 0 10vw;
   }
 }
