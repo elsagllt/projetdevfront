@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
     let total_secondes = (date_fin - date_actuelle) / 1000;
 
-    let prefixe = "Fin de cette collection dans </br>";
+    let prefixe = "Fin de cette collection dans </p><p> ";
 
     if (total_secondes > 0){
       let jours = Math.floor(total_secondes / (60 * 60 * 24));

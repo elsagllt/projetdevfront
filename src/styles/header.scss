@@ -9,6 +9,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+
+  @include bigScreen() {
+    height: 4rem;
+  }
 }
 
 .header__menu {
@@ -30,6 +34,15 @@
   justify-content: flex-start;
   gap: 3rem;
   align-items: center;
+
+  @include mediumScreen() {
+    width: 50vw;
+    height: max-content;
+  }
+
+  @include bigScreen() {
+    width: 20vw;
+  }
 
   p {
     font-size: 1.5rem;
@@ -58,10 +71,14 @@
   background: var(--color4);
   cursor: pointer;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include bigScreen() {
+    top: 1rem;
+    left: 1rem;
+  }
 }
 
 .header__title {

@@ -14,12 +14,31 @@
   }
 }
 
+.avis__texts {
+  @include mediumScreen() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+  }
+  @include giantScreen() {
+    justify-content: center;
+    gap: 10rem;
+  }
+}
+
 .avis__avis {
   margin: 1rem 0;
+  width: 30vw;
+
+  @include giantScreen() {
+    width: 20vw;
+  }
 }
 
 .avis__stars {
   text-align: center;
+  margin-bottom: 1rem;
 
   svg {
     margin: 0.1rem;
@@ -29,4 +48,9 @@
 
 .avis__comment {
   text-align: justify;
+}
+
+.avis__auteur {
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
