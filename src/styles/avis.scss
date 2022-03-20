@@ -3,14 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e4e4fc;
 
   h3 {
-    color: var(--color2);
+    color: black;
     font-size: 1.5rem;
   }
 
   strong {
     font-weight: bold;
+    color: var(--color3);
   }
 }
 
@@ -21,6 +23,7 @@
     justify-content: space-around;
     gap: 5rem;
   }
+
   @include giantScreen() {
     justify-content: center;
     gap: 10rem;
@@ -29,7 +32,6 @@
 
 .avis__avis {
   margin: 1rem 0;
-  width: 30vw;
 
   @include giantScreen() {
     width: 20vw;
@@ -42,7 +44,7 @@
 
   svg {
     margin: 0.1rem;
-    color: aqua;
+    color: var(--color3);
   }
 }
 

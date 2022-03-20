@@ -17,7 +17,8 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: var(--color2);
+  color: var(--color3);
+  font-family: "Comfortaa", cursive;
 }
 
 .product__product {
@@ -69,6 +70,8 @@
 .product__name {
   font-weight: bold;
   font-size: 1.25rem;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.05rem;
 }
 
 .product__sale {
@@ -78,19 +81,5 @@
 }
 
 .product__price {
-  font-weight: bold;
-}
-
-.description {
-  border: solid 1px var(--color2);
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  overflow: hidden;
-  height: 4rem;
-}
-
-.description__title {
-  font-size: 1.25rem;
   font-weight: bold;
 }

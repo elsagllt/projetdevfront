@@ -3,8 +3,9 @@
   top: 0;
   left: 0;
   height: 3rem;
+  padding: 1rem;
   width: 100vw;
-  background-color: var(--color4);
+  background-color: var(--color2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,14 +18,14 @@
 
 .header__menu {
   position: fixed;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
   transition: transform 0.5s;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99;
-  background-color: var(--color4);
+  background-color: var(--color2);
   color: black;
   list-style: none;
   padding: 2rem;
@@ -34,6 +35,7 @@
   justify-content: flex-start;
   gap: 3rem;
   align-items: center;
+  box-shadow: 0 0 2em black;
 
   @include mediumScreen() {
     width: 50vw;
@@ -68,7 +70,7 @@
   padding: 4px;
   border: black solid 1px;
   border-radius: 20%;
-  background: var(--color4);
+  background: var(--color2);
   cursor: pointer;
   text-align: center;
   display: flex;
@@ -83,6 +85,7 @@
 
 .header__title {
   font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
 }
 
 .header__basket {
